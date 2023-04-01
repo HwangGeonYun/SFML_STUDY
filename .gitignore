@@ -16,3 +16,4 @@ CMakeLists.txt
 install_manifest.txt
 practice.cpp
 practice.exe
+.gitignore
