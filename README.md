@@ -13,3 +13,17 @@
 
 8.실행파일에 bin파일을 넣은 후, 환경설정에서 path를 설정해주시면 SFML을 사용할 세팅은 완료되었습니다.
     
+## 주의사항
+
+특정 상황에서는 위와 같은 과정을 거쳐도 IDE에서 컴파일을 할 수 없는 경우가 발생합니다.
+이 경우 다음과 같은 과정을 따라 주세요.
+
+1. 위에 있는 SFML파일을 다운받거나 공식 사이트에서 다운받아서 특정 경로에 저장을 합니다.(ex: C/SFML)
+2. SFML 아래 bin파일의 경로를 환경변수로 설정합니다.
+3. IDE(CLions, VSC, ...)에서 컴파일 하고 싶은 프로젝트를 실행합니다.
+4. 터미널을 실행한 뒤, 다음 명령어를 실행합니다.
+ - g++ -c {실행할 cpp파일 전부} -I{SFML의 includ파일 경로} (예: g++ -c shape_main.cpp shape.cpp -IC:/SFML/include)
+ - g++ {생성된 object파일 전부} -L{SFML의 lib 파일 경로 } -lsfml-window -lsfml-graphics -lsfml-system
+ (예: g++ shape_main.o shape.o -LC:/SFML/lib -lsfml-window -lsfml-graphics -lsfml-system)
+5.위 명령을 실행하면, 실행할 cpp파일이 있는 위치에 생성된 object파일과, 생성된 실행파일 a.exe이 존재할 것입니다.
+이때 a.exe를 클릭해서 실행하면 프로젝를 실행 시킬수 있습니다.
