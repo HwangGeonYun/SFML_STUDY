@@ -25,5 +25,6 @@
  - g++ -c {실행할 cpp파일 전부} -I{SFML의 includ파일 경로} (예: g++ -c shape_main.cpp shape.cpp -IC:/SFML/include)
  - g++ {생성된 object파일 전부} -L{SFML의 lib 파일 경로 } -lsfml-window -lsfml-graphics -lsfml-system
  (예: g++ shape_main.o shape.o -LC:/SFML/lib -lsfml-window -lsfml-graphics -lsfml-system)
+
 5.위 명령을 실행하면, 실행할 cpp파일이 있는 위치에 생성된 object파일과, 생성된 실행파일 a.exe이 존재할 것입니다.
 이때 a.exe를 클릭해서 실행하면 프로젝를 실행 시킬수 있습니다.
