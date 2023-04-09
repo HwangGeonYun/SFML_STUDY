@@ -1,0 +1,3 @@
+C:/Users/ghkdw/CLionProjects/CppHomeWork/AS001ChessGame/cmake-build-debug/CMakeFiles/AS001ChessGame.dir
+C:/Users/ghkdw/CLionProjects/CppHomeWork/AS001ChessGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ghkdw/CLionProjects/CppHomeWork/AS001ChessGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
